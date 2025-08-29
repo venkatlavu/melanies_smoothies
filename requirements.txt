@@ -1,5 +1,4 @@
-#requirements.txt
-  - python=3.11.*
+# requirements.txt
   - snowflake-snowpark-python=
   - streamlit=
 
