@@ -1,7 +1,6 @@
-name: app_environment
-channels:
-  - snowflake
+#requirements.txt
 dependencies:
   - python=3.11.*
   - snowflake-snowpark-python=
   - streamlit=
+pip install --upgrade pip
