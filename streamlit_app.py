@@ -41,3 +41,5 @@ if time_to_insert:
     session.sql(my_insert_stmt).collect()
     
     st.success('Your Smoothie is ordered!', icon="✅")
+  st.write("Snowflake secrets:", st.secrets["snowflake"])
+
