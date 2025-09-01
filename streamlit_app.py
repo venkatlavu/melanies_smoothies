@@ -17,7 +17,7 @@ cnx=st.connection("snowflake")
 session = cnx.session()
 my_dataframe = session.table("smoothies.public.fruit_options").select(col('FRUIT_NAME'))
 #st.dataframe(data=my_dataframe, use_container_width=True)
-st.write("Snowflake secrets:", st.secrets["snowflake"])
+
 ingredients_string = ''
 
 ingredients_list =st.multiselect('Choose upto 5 ingredients:'
