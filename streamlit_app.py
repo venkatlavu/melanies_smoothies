@@ -37,7 +37,7 @@ if ingredients_list:
 
         # Display nutrition info
         st.subheader(f"{fruit_chosen} Nutrition Information")
-        smoothiefroot_response = requests.get(f"https://my.smoothiefroot.com/api/fruit/{search_on}")
+        smoothiefroot_response = requests.get(f"https://my.smoothiefroot.com/api/fruit/"+search_on)
         st.dataframe(smoothiefroot_response.json(), use_container_width=True)
 
 # Insert order into Snowflake
